@@ -1,0 +1,113 @@
+﻿-- INFORMAÇÕES
+
+•	Servidor utilizado: XAMPP 3.2.2
+•	Versão do PHP: 7.3.0
+•	Versão do Apache: 2.4.37
+
+
+-- INSTALAÇÃO --
+
+1.	Copiar o CONTEÚDO da pasta "Aplicação Web" para 
+		o diretório root do servidor.
+2.	Certifique-se de que as informações de acesso
+		ao banco de dados contidas no arquivo "database.php"
+		no diretório "../includes/" está de acordo com a configurada
+		no servidor onde for rodar a aplicação.
+3.	O arquivo .sql do banco de dados encontra-se no mesmo diretório
+		deste documento.
+
+-- COMO USAR
+
+•	Gerenciador de Cargos
+	
+	1.	Criar, buscar e listar cargos
+	
+		1.1 Criar cargos
+				Para criar um cargo, insira o nome do mesmo 
+				e clique no botão "Criar".
+		1.2 Buscar cargos
+				para procurar por um cargo registrado, 
+				apenas começe a digitar o nome do mesmo.
+		2.3 Listar cargos
+				Para lista todos os cargos, apague todo o
+				texto do campo dito acima.
+				
+				
+	2.	Cargos
+			
+		2.1	Código
+				Mostra o código único do cargo
+		2.2 Cargo
+				Mostra o nome do cargo
+		2.3 Ações
+				Mostra as ações que podem ser executadas 
+				com o cargo registrado.
+				
+			2.3.1	Editar
+						Passa os dados do cargo para a 
+						área de ediçao
+			2.3.2	Deletar
+						Deleta o cargo
+						
+					
+	3.	Editar cargo
+			Área de edição do cargo
+			
+		3.1 Código
+				Mostra o código do cargo a ser editado,
+				valor inalterável
+		3.2 Nome do cargo
+				Mostra o nome atual do cargo a ser editado.
+		3.3 Salvar
+				Salva as alterações
+				
+				
+				
+•	Gerenciador de Funcionários
+	
+	1.	Adicionar, buscar e listar funcionários
+	
+		1.1 Adicionar funcionário
+				Para adicionar um funcionário, insira o nome do mesmo,
+				selecione um cargo e clique no botão "Adicionar".
+		1.2 Buscar funcionário
+				para procurar por um funcionário cadastrado, 
+				apenas começe a digitar o nome do mesmo ou 
+				selecione um cargo para listar funcionários 
+				com o mesmos cargos.
+		2.3 Listar funcionário
+				Para lista todos os funcionário, apague todo o
+				texto do campo de nome do funcionário.
+				
+				
+	2.	Funcionários
+			
+		2.1	Código
+				Mostra o código único do funcionário
+		2.2 Nome
+				Mostra o nome do funcionário
+		2.3	Cargo
+				Mostra o cargo do funcionário
+		2.4 Ações
+				Mostra as ações que podem ser executadas 
+				com o funcionário cadastrado.
+				
+			2.4.1	Editar
+						Passa os dados do funcionário para a 
+						área de ediçao
+			2.4.2	Deletar
+						Deleta o funcionário
+						
+					
+	3.	Editar cargo
+			Área de edição do funcionário
+			
+		3.1 Código
+				Mostra o código do funcionário a ser editado,
+				valor inalterável.
+		3.2 Nome do funcionário
+				Mostra o nome atual do funcionário a ser editado.
+		3.3 Cargo do funcionário
+				Mostra o cargo atual do funcionário a ser editado.
+		3.3 Salvar
+				Salva as alterações

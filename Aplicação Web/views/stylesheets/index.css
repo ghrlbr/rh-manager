@@ -1,0 +1,66 @@
+.row
+{
+	margin: 0px;
+}
+.body
+{
+	background: #222428;
+}
+.title
+{
+	font-family: roboto-bold;
+	font-size: 150px;
+	color: #B8BBC1;
+	
+	line-height: 90px;
+	
+	margin-top: 120px;
+}
+.description
+{
+	font-family: roboto-light;
+	font-size: 30px;
+	color: #B8BBC1;
+}
+.manager-page-button
+{
+	margin-top: 50px;
+	width: 100%;
+	
+	background: #B8BBC1;
+	border: 1px solid #A5A8AC;
+	border-radius: 2px;
+	
+	color: #222428;
+	font-size: 16px;
+	font-family: roboto-regular;
+}
+
+@media screen and (max-width: 700px)
+{
+	.title
+	{
+		font-size: 130px;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	.title
+	{
+		font-size: 110px;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	.title
+	{
+		font-size: 90px;
+	}
+}
+@media screen and (max-width: 450px)
+{
+	.title
+	{
+		font-size: 85px;
+	}
+}

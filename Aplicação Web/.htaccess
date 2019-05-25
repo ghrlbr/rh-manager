@@ -1,0 +1,7 @@
+# Ativa o módulo de reescrita de URL do Apache
+RewriteEngine On
+RewriteBase /
+
+# Redireciona todas as requisições para o arquivo "main.php"
+RewriteCond %{REQUEST_URI} !^\/views|\/controllers
+	RewriteRule ^(.*)$ main.php [L]

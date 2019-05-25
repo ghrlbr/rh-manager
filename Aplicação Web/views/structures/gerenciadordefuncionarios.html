@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>Gerenciador de Funcionários</title>
+	
+		<link type="text/css" rel="stylesheet" href="/views/externals/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="/views/stylesheets/fonts.css">
+		<link type="text/css" rel="stylesheet" href="/views/stylesheets/workersManager.css">
+		
+		<script type="application/javascript" src="/views/externals/jquery/3.3.1/js/jquery.min.js"></script>
+		<script type="application/javascript" src="/views/externals/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="application/javascript" src="/views/controllers/workersManager.js"></script>
+		
+	</head>
+	
+	<body class="body">
+	
+		<div class="container-fluid">
+
+			<div class="row">
+			
+				<div class="row">
+					
+					<a href="/" class="col-md-12 text-center title">Recursos Humanos</a>
+					<h3 class="col-md-12 text-center description">Gerenciador de Funcionários<h3>
+					
+				</div>
+				
+				<!-- BOX ADICIONAR,LISTAR E BUSCAR FUNCIONÁRIOS -->
+				<div class="row box">
+				
+					<form id="new-worker-form" class="col-md-12 new-worker-form">
+						
+						<div class="row">
+							<h4 class="box-title">1. Adicionar, buscar e listar funcionários</h4>
+						</div>
+						<div class="row">
+							<h5 class="box-description">Digite o nome do funcionário, selecione seu cargo e clique em "Adicionar" para adicionar um novo funcionário, para buscar apenas começe a digitar o nome do funcionário ou selecione o cargo do funcionário e para listar todos os funcionários, apenas apague o nome do funcionário.</h5>
+						</div>
+						
+						<div class="row">
+						
+							<div class="row">
+								<h6 class="input-help">Nome do funcionário</h6>
+							</div>
+							<div class="row">
+								<input autocomplete="off" id="new-worker-name" class="col-md-12 col-sm-12 col-xs-12" type="text" name="name" placeholder="">
+							</div>
+						
+						</div>
+						
+						<div class="row">
+						
+							<div class="row">
+								<h6 class="input-help">Cargo do funcionário</h6>
+							</div>
+							<div class="row">
+								<select id="new-worker-job" class="col-md-12 col-sm-12 col-xs-12 jobs-selector"></select>
+							</div>
+						
+						</div>
+						
+						<div class="row box-bottom">
+							<span id="new-worker-console" class="text-right col-md-10 col-sm-10 col-xs-10 new-worker-console"></span>
+							<input id="add-worker" class="submit-button col-md-2 col-sm-2 col-xs-2 e0149" type="submit" value="Adicionar">
+						</div>
+							
+					</form>
+				
+				</div>
+				
+				<!-- BOX FUNCIONÁRIOS -->
+				<div class="row box">
+					
+					<div class="row">
+					
+						<div class="row">
+							<h4 class="box-title">2. Funcionários</h4>
+						</div>
+						
+						<div class="row">
+							<h5 class="box-description">Lista dos funcionários cadastrados ou do resultado da busca.</h5>
+						</div>
+						
+					</div>		
+						
+					<table id="workers-table" class="workers-table">
+						
+						<tr>
+							<th class="text-center col-md-1 table-column-title">Código</th>
+							<th class="text-center col-md-7 table-column-title">Nome</th> 
+							<th class="text-center col-md-2 table-column-title">Cargo</th> 
+							<th class="text-center col-md-2 table-column-title">Ações</th>
+						</tr>
+						
+						<tbody id="workers-container">
+						
+						</tbody>
+						  
+					</table>
+					
+				</div>
+				
+				<!-- BOX EDITAR FUNCIONÁRIO -->
+				<div id="edit-worker-box" class="row box">
+				
+					<form id="edit-worker-form" class="col-md-12 edit-worker-form">
+						
+						<div class="row">
+							<h4 class="box-title">3. Editar informações do funcionário</h4>
+						</div>
+						
+						<div class="row">
+							<h5 class="box-description">Na lista de funcionários, clique no botão editar para habilitar a edição.</h5>
+						</div>
+						
+						<div class="row">
+							<div class="row">
+								<h6 class="input-help">Código</h6>
+							</div>
+							<div class="row">
+								<input disabled id="edit-worker-identifier" class="col-md-2 col-sm-2 col-xs-2" type="number" name="identifier">
+							</div>
+						</div>
+						
+						<div class="row">
+						
+							<div class="row">
+								<h6 class="input-help">Nome do funcionário</h6>
+							</div>
+							<div class="row">
+								<input disabled id="edit-worker-name" class="col-md-12 col-sm-12 col-xs-12" type="text" name="name" placeholder="">
+							</div>
+						
+						</div>
+						
+						<div class="row">
+						
+							<div class="row">
+								<h6 class="input-help">Cargo do funcionário</h6>
+							</div>
+							<div class="row">
+								<select disabled id="edit-worker-job" class="col-md-12 col-sm-12 col-xs-12 jobs-selector"></select>
+							</div>
+						
+						</div>
+						
+						<div class="row e0153">
+							<span id="edit-worker-console" class="col-md-10 col-sm-10 col-xs-10 edit-worker-console text-right"></span>
+							<input id="edit-worker-save" class="col-md-2 col-sm-2 col-xs-2 submit-button" type="submit" value="Salvar">
+						</div>
+							
+					</form>
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	
+	</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>Gerenciador de Cargos</title>
+	
+		<link type="text/css" rel="stylesheet" href="/views/externals/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="/views/stylesheets/fonts.css">
+		<link type="text/css" rel="stylesheet" href="/views/stylesheets/jobsManager.css">
+		
+		<script type="application/javascript" src="/views/externals/jquery/3.3.1/js/jquery.min.js"></script>
+		<script type="application/javascript" src="/views/externals/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="application/javascript" src="/views/controllers/jobsManager.js"></script>
+		
+	</head>
+	
+	<body class="body">
+	
+		<div class="container-fluid">
+		
+			<div class="row">
+			
+				<div class="row">
+					
+					<a href="/" class="col-md-12 text-center title">Recursos Humanos</a>
+					<h3 class="col-md-12 text-center description">Gerenciador de Cargos<h3>
+					
+				</div>
+				
+				<!-- CRIAR, BUSCAR E LISTAR CARGOS -->
+				<div class="row box">
+				
+					<form id="new-job-form" class="col-md-12 new-job-form">
+						
+						<div class="row">
+							<h4 class="box-title">1. Criar, buscar e listar cargos</h4>
+						</div>
+						<div class="row">
+							<h5 class="box-description">Digite o nome do cargo e clique em "criar" para criar um novo cargo, apague todo o texto para listar todos os cargos ou apenas digite para começar a procurar por cargos.</h5>
+						</div>
+						
+						<div class="row">
+						
+							<div class="row">
+								<h6 class="input-help">Nome do cargo</h6>
+							</div>
+							<div class="row">
+								<input autocomplete="off" id="e0150" class="col-md-12 col-sm-12 col-xs-12" type="text" name="title" placeholder="Programador, web designer, redator...">
+							</div>
+						
+						</div>
+						
+						<div class="row box-bottom">
+							<span id="e0152" class="col-md-10 col-sm-10 col-xs-10 new-job-console text-right"></span>
+							<input id="e0149" class="col-md-2 col-sm-2 col-xs-2 submit-button" type="submit" value="Criar">
+						</div>
+							
+					</form>
+				
+				</div>
+				
+				<!-- BOX LISTA DOS CARGOS -->
+				<div class="row box">
+				
+					<div class="row">
+						<div class="row">
+							<h4 class="box-title">2. Cargos</h4>
+						</div>
+						<div class="row">
+							<h5 class="box-description">Lista dos cargos cadastrados ou do resultado da busca de cargos</h5>
+						</div>
+					</div>	
+					
+					<table id="e0124" class="job-table">
+						
+						<tr>
+							<th class="text-center col-md-1 table-column-title">Código</th>
+							<th class="text-center col-md-9 table-column-title">Cargo</th> 
+							<th class="text-center col-md-2 table-column-title">Ações</th>
+						</tr>
+						
+						<tbody id="jobs-container">
+						
+						</tbody>
+						  
+					</table>
+					
+				</div>
+				
+				<!-- EDITAR CARGO -->
+				<div class="row box">
+				
+					<form id="edit-job-form" class="col-md-12 edit-job-form">
+						
+						<div class="row">
+							<h4 class="box-title">3. Editar cargo</h4>
+						</div>
+						
+						<div class="row">
+							<div class="row">
+								<h6 class="input-help">Código</h6>
+							</div>
+							<div class="row">
+								<input disabled id="new-job-identifier" class="col-md-2 col-sm-2 col-xs-2" type="number" name="identifier">
+							</div>
+						</div>
+						
+						<div class="row">
+						
+							<div class="row">
+								<h6 class="input-help">Nome do cargo</h6>
+							</div>
+							<div class="row">
+								<input disabled autocomplete="off" id="new-job-title" class="col-md-12 col-sm-12 col-xs-12" type="text" name="title" placeholder="Programador, web designer, redator...">
+							</div>
+						
+						</div>
+						
+						<div class="row box-bottom">
+							<span id="new-job-info-console" class="col-md-10 col-sm-10 col-xs-10"></span>
+							<input id="edit-save-button" class="col-md-2 col-sm-2 col-xs-2 submit-button" type="submit" value="Salvar">
+						</div>
+							
+					</form>
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	
+	</body>
+
+</html>
